@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-18.04
     needs: [test, sonar]
     env:
-      REPO: ${{ secrets.DOCKER_REPO }}
+      REPO: ${{ secrets.DOCKER_HUB_REPO }}
 
     steps:
       - uses: actions/checkout@v1
